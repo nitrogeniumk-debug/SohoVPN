@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "SohoVPN",
     "start": "ابدأ",
     "version": "الإصدار",
     "ok": "موافق",
@@ -182,7 +182,7 @@
       "notAvailableMsg": "أنت تستخدم أحدث إصدار بالفعل",
       "checkForUpdate": "التحقق من وجود تحديثات",
       "openWorkingDir": "فتح مجلد العمل",
-      "sourceCode": "الكود المصدري",
+      "sourceCode": "Our Channel",
       "telegramChannel": "قناة التيليجرام",
       "termsAndConditions": "الشروط والأحكام",
       "privacyPolicy": "سياسة الخصوصية"
@@ -568,7 +568,7 @@
       "msg": "للبدء، قم بإضافة ملف اتصال يحتوي على تفاصيل اتصال VPN الخاصة بك.\n\nأليس لديك خادم VPN بعد؟ لا تقلق، اتبع الدليل أدناه لإعداد واحد بسرعة ومجانًا.",
       "helpBtn": {
         "label": "أرني كيف",
-        "url": "https://hiddify.com/manager/"
+        "url": "https://t.me/ConsoleWriteBug"
       }
     },
     "unknownDomainsWarning": {

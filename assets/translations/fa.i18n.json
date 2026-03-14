@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "هیدیفای",
+    "appTitle": "SohoVPN",
     "start": "شروع",
     "version": "نسخه",
     "ok": "باشه",
@@ -176,7 +176,7 @@
       "notAvailableMsg": "شما در حال استفاده از آخرین نسخه هستید",
       "checkForUpdate": "بررسی برای به‌روزرسانی",
       "openWorkingDir": "باز کردن پوشه کاری",
-      "sourceCode": "کد منبع",
+      "sourceCode": "Our Channel",
       "telegramChannel": "کانال تلگرام",
       "termsAndConditions": "شرایط و ضوابط",
       "privacyPolicy": "سیاست حفظ حریم خصوصی"
@@ -562,7 +562,7 @@
       "msg": "بیایید با افزودن یک پروفایل اتصال که شامل جزئیات اتصال VPN شماست، شروع کنیم.\n\nهنوز سرور VPN ندارید؟ نگران نباشید، با دنبال کردن راهنمای زیر می‌توانید به سرعت و رایگان یکی برای خودتان بسازید.",
       "helpBtn": {
         "label": "راهنمایی کن",
-        "url": "https://hiddify.com/manager/"
+        "url": "https://t.me/ConsoleWriteBug"
       }
     },
     "unknownDomainsWarning": {

@@ -119,14 +119,14 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Import Apple Codesign Certificates
-        if: ${{ inputs.upload-artifact && startsWith(matrix.os,'macos') }}
+        if: ${{ inputs.upload-artifact && startsWith(matrix.os,'macos') && secrets.APPLE_CERTIFICATE_P12 != '' }}
         uses: apple-actions/import-codesign-certs@v6
-        with: 
+        with:
             p12-file-base64: "${{ secrets.APPLE_CERTIFICATE_P12 }}"
             p12-password: "${{ secrets.APPLE_CERTIFICATE_P12_PASSWORD }}"
 
       - name: Import Apple Mobile Provisioning Profile
-        if: ${{ inputs.upload-artifact && startsWith(matrix.os,'macos') }}
+        if: ${{ inputs.upload-artifact && startsWith(matrix.os,'macos') && secrets.APPLE_CERTIFICATE_P12 != '' }}
         run: |
            mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
            echo "${{secrets.APPLE_MOBILE_PROVISIONING_PROFILES_TARGZ_BASE64}}"|base64 --decode | tar xz -C ~/Library/MobileDevice/Provisioning\ Profiles
@@ -136,7 +136,7 @@ jobs:
         #   ls ~/Library/MobileDevice/Provisioning\ Profiles
         #   echo "${{secrets.NEW_APPLE_MOBILE_PROVISIONING_PROFILES_TARXZ_BASE64}}"|base64 --decode | tar xJ -C ~/Library/MobileDevice/Provisioning\ Profiles
         #   # echo "${{secrets.NEW_APPLE_MOBILE_PROVISIONING_PROFILES_TARGZ_BASE64_2}}"|base64 --decode | tar xz -C ~/Library/MobileDevice/Provisioning\ Profiles
-          
+
 
 
       # - name: Setup Flutter for arm64
@@ -246,6 +246,13 @@ jobs:
         run: |
           make ${{ matrix.platform }}-prepare
 
+
+      - name: Disable macOS code signing (no cert)
+        if: ${{ startsWith(matrix.os,'macos') && secrets.APPLE_CERTIFICATE_P12 == '' }}
+        run: |
+          echo "CODE_SIGN_IDENTITY=" >> $GITHUB_ENV
+          echo "CODE_SIGNING_REQUIRED=NO" >> $GITHUB_ENV
+          echo "CODE_SIGNING_ALLOWED=NO" >> $GITHUB_ENV
 
       - name: Build ${{ matrix.platform }}
         env:

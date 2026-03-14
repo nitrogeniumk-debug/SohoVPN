@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "SohoVPN",
     "start": "Mulai",
     "version": "Versi",
     "ok": "Oke",
@@ -176,7 +176,7 @@
       "notAvailableMsg": "Anda sudah menggunakan versi terbaru",
       "checkForUpdate": "Periksa pembaruan",
       "openWorkingDir": "Buka direktori kerja",
-      "sourceCode": "Kode sumber",
+      "sourceCode": "Our Channel",
       "telegramChannel": "Saluran Telegram",
       "termsAndConditions": "Syarat dan Ketentuan",
       "privacyPolicy": "Kebijakan Privasi"
@@ -562,7 +562,7 @@
       "msg": "Mari kita mulai dengan menambahkan profil koneksi yang berisi detail koneksi VPN Anda.\n\nBelum punya server VPN? Jangan khawatir, ikuti tutorial di bawah ini untuk mengaturnya dengan cepat dan gratis.",
       "helpBtn": {
         "label": "Tunjukkan caranya",
-        "url": "https://hiddify.com/manager/"
+        "url": "https://t.me/ConsoleWriteBug"
       }
     },
     "unknownDomainsWarning": {
