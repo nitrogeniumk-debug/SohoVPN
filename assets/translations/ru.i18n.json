@@ -1,6 +1,6 @@
 {
   "common": {
-    "appTitle": "Hiddify",
+    "appTitle": "SohoVPN",
     "start": "Начать",
     "version": "Версия",
     "ok": "OK",
@@ -180,8 +180,8 @@
       "notAvailableMsg": "Вы уже используете последнюю версию",
       "checkForUpdate": "Проверить обновления",
       "openWorkingDir": "Открыть рабочую папку",
-      "sourceCode": "Исходный код",
-      "telegramChannel": "Канал в Telegram",
+      "sourceCode": "Наш канал",
+      "telegramChannel": "@ConsoleWriteBug",
       "termsAndConditions": "Условия использования",
       "privacyPolicy": "Политика конфиденциальности"
     },
